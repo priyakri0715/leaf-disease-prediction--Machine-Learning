@@ -1,100 +1,155 @@
-Leaf Disease Prediction using Machine Learning
-📌 Overview
+# 🌿 Leaf Disease Prediction using Machine Learning (LeafD)
 
-This project focuses on detecting plant leaf diseases using a Convolutional Neural Network (CNN). It classifies leaf images into categories such as Healthy, Early Blight, and Late Blight.
+## 📌 Project Overview
 
-The system includes:
+This project focuses on detecting and classifying plant leaf diseases using Machine Learning and Deep Learning techniques. The model is trained on a large dataset of plant leaf images (including tomato leaves) to identify various diseases and healthy conditions.
 
-Data preprocessing & augmentation
-Model training using deep learning
-Evaluation & visualization
-Real-time prediction via a web application
-🚀 Features
-🌱 Image classification using CNN
-📊 Data preprocessing and augmentation
-⚡ Fast and accurate predictions
-🌐 Streamlit web app for real-time use
-📈 Training & validation accuracy visualization
-📂 Project Structure
-leaf-disease-prediction-ml/
-│
-├── dataset/
-│   ├── healthy/
-│   ├── early_blight/
-│   └── late_blight/
-│
-├── model/
-│   └── leaf_disease_model.h5
-│
-├── app/
-│   └── app.py
-│
-├── src/
-│   ├── train.py
-│   ├── predict.py
-│   └── preprocess.py
-│
-├── notebook/
-│   └── leaf_disease_training.ipynb
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
-📊 Dataset
+The main objective is to help farmers and researchers detect plant diseases early and take preventive measures to improve crop yield and quality.
 
-This project uses a dataset inspired by the
-PlantVillage Dataset, which contains thousands of labeled plant leaf images.
+---
 
-Classes:
-Healthy
-Early Blight
-Late Blight
-🛠️ Tech Stack
-Python
-TensorFlow / Keras
-OpenCV
-NumPy & Matplotlib
-Streamlit
-⚙️ Installation
-git clone https://github.com/your-username/leaf-disease-prediction-ml.git
-cd leaf-disease-prediction-ml
+## 📂 Dataset
+
+* Dataset downloaded from Mendeley Data
+* Size: ~905 MB
+* Contains:
+
+  * Thousands of plant leaf images
+  * Multiple disease categories
+  * Augmented images for better accuracy
+
+### Dataset Structure
+
+```
+Plant_leave_diseases_dataset_with_augmentation/
+│
+├── Tomato___Healthy/
+├── Tomato___Early_blight/
+├── Tomato___Late_blight/
+├── Tomato___Leaf_Mold/
+├── Tomato___Tomato_Yellow_Leaf_Curl_Virus/
+└── ...
+```
+
+---
+
+## ⚙️ Technologies Used
+
+* Python 🐍
+* TensorFlow / Keras 🤖
+* NumPy & Pandas 📊
+* Matplotlib 📈
+* OpenCV 🖼️
+* Jupyter Notebook
+
+---
+
+## 🚀 Features
+
+* Image-based plant disease detection
+* Deep learning model using CNN
+* Data preprocessing and augmentation
+* High accuracy classification
+* Scalable to multiple crops
+
+---
+
+## 🧠 Model Workflow
+
+1. **Data Collection**
+
+   * Dataset downloaded and extracted
+
+2. **Data Preprocessing**
+
+   * Image resizing and normalization
+   * Train-test splitting
+
+3. **Model Building**
+
+   * Convolutional Neural Network (CNN)
+   * Feature extraction layers
+
+4. **Training**
+
+   * Model trained on multiple epochs
+   * Accuracy and loss monitored
+
+5. **Evaluation**
+
+   * Validation accuracy checked
+   * Performance analysis
+
+---
+
+## 💻 Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/leafd-disease-prediction.git
+cd leafd-disease-prediction
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
-▶️ Training the Model
-python src/train.py
-🔍 Running Prediction
-python src/predict.py
-🌐 Run Web Application
-streamlit run app/app.py
-📈 Results
-Achieved high accuracy on validation dataset
-Efficient classification of plant diseases
-Real-time prediction via web interface
-📸 Screenshots (Add Your Images Here)
-![App Screenshot](images/app.png)
-![Accuracy Graph](images/accuracy.png)
-🔮 Future Improvements
-🚀 Implement Transfer Learning (ResNet50, MobileNet)
-☁️ Deploy on cloud (AWS / Render / Heroku)
-🌍 Expand dataset for more crops and diseases
-📱 Build mobile application
-👨‍💻 Author
+```
 
-Shubhanshu Kumar
+### 3️⃣ Download Dataset
 
-🎓 BS CSDA, IIT Patna
-📊 Aspiring Data Scientist & Data Analyst
-🏷️ Tags
+```bash
+wget -O dataset.zip "https://data.mendeley.com/public-files/datasets/..."
+unzip dataset.zip
+```
 
-machine-learning deep-learning cnn image-classification tensorflow opencv streamlit data-science
+### 4️⃣ Run the Project
 
-⭐ Support
+```bash
+jupyter notebook
+```
 
-If you like this project, give it a ⭐ on GitHub!
+---
 
-🔥 Pro Tip (Important)
+## 📊 Results
 
-Before uploading:
+* Achieved high accuracy in disease classification
+* Effective performance on augmented dataset
+* Reliable detection across multiple disease classes
 
-Add screenshots
-Upload model file carefully (or ignore if large)
-Add .gitignore (ignore dataset & model if heavy)
+---
+
+## 🔮 Future Improvements
+
+* Web app deployment using Streamlit
+* Real-time disease detection
+* Expansion to more plant species
+* Mobile app integration
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork this repository and submit pull requests.
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## 👩‍💻 Author
+
+**Priya Kumari**
+
+* B.Tech CSE (Data Science) Student
+* Passionate about Machine Learning & Data Science
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please give it a ⭐ on GitHub!
