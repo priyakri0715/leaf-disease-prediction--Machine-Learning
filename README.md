@@ -22,7 +22,11 @@ Build an automated plant disease detection system
 Apply transfer learning for efficient model training
 Improve classification accuracy using deep learning
 Create a scalable solution for real-world agricultural use
-🛠️ Technologies Used
+🛠️ 
+
+
+Technologies Used
+
 💻 Programming & Tools
 Python
 Google Colab / Jupyter Notebook
@@ -34,6 +38,9 @@ Transfer Learning (EfficientNetB4)
 NumPy
 Matplotlib
 Split-folders (dataset splitting)
+
+
+
 📂 Dataset Details
 Dataset: Plant Leaf Diseases Dataset (Augmented)
 Size: ~900MB
@@ -51,6 +58,9 @@ Images resized to 160x160
 Batch processing for efficient training
 🔹 Step 2: Model Architecture
 
+
+
+
 Base Model:
 
 EfficientNetB4 (Pretrained on ImageNet)
@@ -62,15 +72,22 @@ Batch Normalization
 Dense Layer (ReLU Activation)
 Dropout Layer (0.5)
 Output Layer (Softmax)
-🔹 Step 3: Model Training
+🔹
+
+
+Step 3: Model Training
 Optimizer: Adam
 Loss Function: Sparse Categorical Crossentropy
 Metrics: Accuracy
 Batch Size: 32
-🔹 Step 4: Model Evaluation
+🔹 
+
+Step 4: Model Evaluation
 Tested on unseen dataset
 Predictions compared with actual labels
 Visualization using matplotlib
+
+
 📊 Results & Performance
 Achieved strong classification accuracy on validation data
 Efficient training due to transfer learning
@@ -78,6 +95,8 @@ Successfully classified multiple disease categories
 📸 Output Visualization
 Grid-based visualization of predictions
 Displays predicted vs actual labels
+
+
 💡 Key Features
 End-to-end ML pipeline
 Transfer learning implementation
@@ -90,6 +109,8 @@ Add real-time image upload feature
 Fine-tune model for higher accuracy
 Integrate with mobile applications
 Add disease treatment suggestions
+
+
 📁 Project Structure
 LeafD/
 │── dataset/
@@ -99,7 +120,10 @@ LeafD/
 │
 │── LeafD_Model.ipynb
 │── README.md
-🧠 Skills Demonstrated
+🧠 
+
+
+Skills Demonstrated
 Technical Skills
 Deep Learning (CNN)
 Transfer Learning (EfficientNetB4)
@@ -112,5 +136,4 @@ Visualization & debugging
 End-to-end ML pipeline development
 👨‍💻 Author
 
-Shubhanshu Kumar
-Aspiring Data Analyst | Future Data Scientist
+Priya Kumari
